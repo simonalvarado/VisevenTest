@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Credit Card</title>
+</head>
+<body>
+    <div class="title_container">
+        <h1>Payment Information</h1>
+    </div>
+    <div class="main_container">
+        <div class="card_container">
+            <div class="card">
+                <div class="card_inner_container">
+                    <div class="front">
+                        <img src="/Images/background.png" alt="background" class="background_img">
+                        <div class="row">
+                            <img src="/Images/chip.png" alt="chip" id="chip">
+                        </div>
+                        <div class="row" id="first-value">
+                            <p class="card_number_description">
+                                card number
+                            </p>
+                            <div class="card_number">
+                                0123 4567 8910 1112
+                            </div>
+                        </div>
+                        <div class="row" id="second-value">
+                            <div>
+                                <p class="card_number_description">
+                                    cardholder name
+                                </p>
+                                <div class="name_expiration">
+                                    JOHN DOE
+                                </div>
+                            </div>
+                            <div style="width: 105px;">
+                                <p class="card_number_description">
+                                    expiration
+                                </p>
+                                <div id="expiration-container">
+                                    <p>VALID<br>THRU</p>
+                                    <img src="/Images/triangle.png" alt="triangle" class="triangle">
+                                    <div class="name_expiration number_expiration">
+                                        01/23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_container">
+            <div>
+                <div class="input_container">
+                    <span>Name</span>
+                    <input type="text" maxlength="24" class="name_input" autocomplete="off">
+                </div>
+                <div class="input_container">
+                    <div class="card_number_container">
+                        <span>Card Number</span>
+                        <button class="generate_random">generate random</button>
+                    </div>                    
+                    <input type="text" maxlength="19" class="card_number_input" autocomplete="off">
+                </div>
+                <div class="input_container">
+                    <span>Expiration (mm/yy)</span>
+                    <input type="text" maxlength="5" class="expiration_input" autocomplete="off" id="exp">            
+                </div>
+            </div>
+        </div>
+    </div>  
+<script src="/scripts.js"></script>    
+</body>
+</html>

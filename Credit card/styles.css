@@ -1,0 +1,208 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 40px;
+}
+
+.main_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card_inner_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  background-color: #616161;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 45px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+#chip {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  position: relative;
+  left: -40px;
+}
+
+#first-value {
+  padding-top: 16px;
+}
+
+.card_number {
+  font-size: 1.8rem;
+  min-height: 38px;
+}
+
+.background_img {
+  width: 100%;
+  position: absolute;
+  top: -51px;
+  left: 0;
+  z-index: -1;
+}
+
+#second-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#expiration-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#expiration-container p {
+  font-size: 0.6rem;
+}
+
+.triangle {
+  height: 12px;
+  padding: 0 8px;
+}
+
+.name_expiration {
+  font-size: 1.2rem;
+}
+
+.card_number_description {
+  color: #b0b0af;
+}
+
+.form_container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-right: 20px;
+  color: #616161;
+}
+
+.form_container input {
+  padding: 15px;
+  border-color: #bdbdbd;
+  border-radius: 5px;
+  border-width: 0.5px;
+}
+
+.input_container, .expiration_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+}
+
+.input_container span, .input_container div, .expiration_container span, .expiration_container div {
+  padding-bottom: 5px;
+}
+
+.card_number_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card_number_container button {
+  color: #ffffff;
+  background-color: #616161;
+  border: 0px;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+input:hover {
+  -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_container.success input {
+  border-color: #2ecc71;
+  border-width: 2px;
+}
+
+.input_container.error input {
+  border-color: #e74c3c;
+  border-width: 2px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--navbar-->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <img onclick="myFunction()" id="menu" src="/Media/menus.png" class="icon ion-md-menu" alt="menu">
+                    <img onclick="myFunction()" src="/Media/x.png" id="close_hamburguer" class="icon ion-md-close" alt="close">
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="/Media/logo.png" class="ion-md-cash" alt="logo">
+                </a>
+                <ul id="myLinks" class="nav-list">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="option">Resources
+                            <img src="/Media/dropdownIcon.png" alt="dropdown">
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Resource 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Resource 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Resource 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="move-right btn">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Block 2: -->
+    <section class="block2">
+        <div class="block2-content">
+            <div>
+                <h1 class="title">
+                    Be Smart, <br>
+                    Think Smart, <br>
+                    Save Money
+                </h1>
+                <p class="paragraph">
+                    Compare your take-home today
+                </p>
+                <div class="block2-form">
+                    <form id="form">
+                        <div class="form-control">
+                            <input type="number" placeholder="Phone Number" class="block2-input" id="phone_number">
+                        </div>
+    
+                        <div class="submit-wrapper">
+                            <div class="form-control" id="day_rate_wrapper">
+                                <input type="number" placeholder="Day Rate" class="block2-input" id="day_rate">
+                            </div>
+        
+                            <button class="block2-button" id="submit">
+                                Submit
+                            </button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="block2-image">
+            <img src="/Media/picture1.png" alt="Be smart, think smart, save money" id="picture1">
+        </div>
+    </section>
+
+    <!-- pop up -->
+    <div class="popup-container" id="popup_container">
+        <div class="popup">
+            <h1>
+                Compare your take-home today
+            </h1>
+            <p id="popup_paragraph">
+                Your phone number is: 123123123 <br>
+                Your day rate is: 50
+            </p>
+            <button class="block2-button" id="close">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Black3: -->
+    <section class="block3">
+        <div class="block3_wrapper">
+            <div class="block3_title">
+                <div class="block3_title_wrapper">
+                    <h2 class="title2">
+                        Features
+                    </h2>
+                    <div class="divider_wrapper">
+                        <div class="divider">
+
+                        </div>
+                    </div>
+                    <p>
+                        OUR KEY COMPETITIVE ADVANTAGES
+                    </p>
+                </div>
+            </div>
+            <div class="floating_container">
+                <div class="floating">
+                    <div class="features">
+                        <div class="img_container">
+                            <img src="/Media/features1.png" alt="feature1">
+                        </div>
+                        <h2 class="features_header">
+                            Header
+                        </h2>
+                        <p class="features_text">
+                            Interdum et malesuada fames ac ante primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
+                        </p>
+                    </div>
+                    <div class="features">
+                        <div class="img_container">
+                            <img src="/Media/features2.png" alt="feature2">
+                        </div>                        
+                        <h2 class="features_header">
+                            Header
+                        </h2>
+                        <p class="features_text">
+                            Interdum et malesuada fames ac ante primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
+                        </p>
+                    </div>
+                    <div class="features">
+                        <div class="img_container">
+                            <img src="/Media/features3.png" alt="feature3">
+                        </div>                        
+                        <h2 class="features_header">
+                            Header
+                        </h2>
+                        <p class="features_text">
+                            Interdum et malesuada fames ac ante  primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- block 4 -->
+    <section class="block4">
+        <!-- background -->
+        <div class="background">
+            <img src="/Media/backgrounduno.png" alt="Background 1">
+            <img src="/Media/backgrounddos.png" id="background_2" alt="Background 2">
+        </div>
+
+        <div class="block4_wrapper">
+            <form id="form2">
+                <div class="form-control-2">
+                    <label>Number of employees</label>
+                    <input type="number" id="number-employees">
+                </div>
+
+                <div class="form-control-2">
+                    <label>For the payroll, I use</label>
+                    <div class="select-container">
+                        <select name="payroll" id="payroll_select">
+                        </select>
+                        <img src="/Media/arrow.png" alt="Arrow">
+                    </div>
+                </div>
+
+                <div class="form-control-2 button-control">
+                    <button>
+                        Compare plans
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- block 5 -->
+
+    <section class="block5">
+        <div class="block3_title">
+            <div class="block3_title_wrapper">
+                <h2 class="title2">
+                    Price
+                </h2>
+                <div class="divider_wrapper">
+                    <div class="divider">
+
+                    </div>
+                </div>
+                <p>
+                    COMPARE OUR TARIFF PLANS
+                </p>
+            </div>
+        </div>
+        <div class="tier-container">
+            <div class="tier">
+                <div class="title-container">
+    
+                        <h2>Tier 1</h2>
+                </div>
+                <h1>
+                    <b><sup style="font-size: 1.8rem;">$</sup> <span style="font-size: 3.8rem;">11.99</span> <span style="font-size: 1.8rem;">/ month</span></b>
+                </h1>
+                <div class="dash-div"></div>
+                <ul>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                </ul>
+                <button class="block2-button">
+                    Choose
+                </button>
+            </div>
+            <div class="tier">
+                <div class="title-container" id="tier_2">
+                    <h2>Tier 2</h2>
+                </div>
+                <h1 id="tier_2_month">
+                    <b><sup>$</sup> <span style="font-size: 3.8rem;">11.99</span> <span style="font-size: 1.8rem;">/ month</span></b>
+                </h1>
+                <div class="dash-div"></div>
+                <ul>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                    <li>Some option number 1</li>
+                </ul>
+                <button class="block2-button" id="tier_2_button">
+                    Choose
+                </button>
+            </div>
+        </div>   
+    </section>
+
+    <!-- block 6 -->
+    <footer class="block6">
+        <div class="block6-wrapper">
+            <div class="footer" id="footer1">
+                <img src="/Media/footerlogo.png" alt="Footer logo" id="footer_logo">
+                <div>Praesent varius feugiat dolor, a pulvinar leo facilisis blandit. Sed quis lobortis mauris, et lacinia justo. Sed sollicitudin risus consequat pulvinar efficitur. Praesent ac augue in lorem laoreet bibendum. Vestibulum mattis accumsan nulla eget sagittis. </div>
+            </div>
+            <div>
+                <div class="footer-title">Documents</div>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-title">Menu</div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-title">About company</div>
+                <ul>
+                    <li>Company no.: 12345678</li>
+                    <li>VAT Number: 123 4567 89</li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-title">Follow US</div>
+                <Div>
+                    <a href="#"><img src="/Media/facebook.png" alt="Facebook" class="footer-logo"></a>
+                    <a href="#"><img src="/Media/li.png" alt="LinkedIn" class="footer-logo"></a>
+                </Div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="sign-off">
+            Trinity Court, Molly Millars Ln, Wokingham RG41 2PY, United Kingdom
+        </div>
+    </footer>
+    
+
+<script src="/scripts.js"></script>
+</body>
+</html>
