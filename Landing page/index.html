@@ -14,21 +14,22 @@
 
     <!--navbar-->
     <header>
-        <div class="container">
+        <div class="header-container">
             <nav>
                 <div class="menu-icons">
-                    <img onclick="myFunction()" id="menu" src="/Media/menus.png" class="icon ion-md-menu" alt="menu">
-                    <img onclick="myFunction()" src="/Media/x.png" id="close_hamburguer" class="icon ion-md-close" alt="close">
+                    <img id="open_hamburguer" src="/Media/menus.png" alt="menu">
+                    <img src="/Media/x.png" id="close_hamburguer" class="icon-md-close" alt="close">
                 </div>
                 <a href="index.html" class="logo">
-                    <img src="/Media/logo.png" class="ion-md-cash" alt="logo">
+                    <img src="/Media/logo.png" alt="logo">
                 </a>
-                <ul id="myLinks" class="nav-list">
+                <ul id="my_links" class="nav-list">
                     <li>
                         <a href="#">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="option">Resources
+                        <a href="#" class="resources">
+                            Resources
                             <img src="/Media/dropdownIcon.png" alt="dropdown">
                         </a>
                         <ul class="sub-menu">
@@ -43,7 +44,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="move-right btn">
+                    <li class="btn">
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
@@ -55,14 +56,16 @@
     <section class="block2">
         <div class="block2-content">
             <div>
-                <h1 class="title">
-                    Be Smart, <br>
-                    Think Smart, <br>
-                    Save Money
-                </h1>
-                <p class="paragraph">
-                    Compare your take-home today
-                </p>
+                <article>
+                    <h1 class="title">
+                        Be Smart, <br>
+                        Think Smart, <br>
+                        Save Money
+                    </h1>
+                    <p class="paragraph">
+                        Compare your take-home today
+                    </p>
+                </article>
                 <div class="block2-form">
                     <form id="form">
                         <div class="form-control">
@@ -99,21 +102,21 @@
                 Your phone number is: 123123123 <br>
                 Your day rate is: 50
             </p>
-            <button class="block2-button" id="close">
+            <button class="block2-button">
                 Close
             </button>
         </div>
     </div>
 
-    <!-- Black3: -->
+    <!-- Block 3: -->
     <section class="block3">
-        <div class="block3_wrapper">
-            <div class="block3_title">
-                <div class="block3_title_wrapper">
+        <div class="block3-wrapper">
+            <div class="block3-title">
+                <div class="block3-title-wrapper">
                     <h2 class="title2">
                         Features
                     </h2>
-                    <div class="divider_wrapper">
+                    <div class="divider-wrapper">
                         <div class="divider">
 
                         </div>
@@ -123,40 +126,46 @@
                     </p>
                 </div>
             </div>
-            <div class="floating_container">
+            <div class="floating-container">
                 <div class="floating">
                     <div class="features">
-                        <div class="img_container">
+                        <div class="img-container">
                             <img src="/Media/features1.png" alt="feature1">
                         </div>
-                        <h2 class="features_header">
-                            Header
-                        </h2>
-                        <p class="features_text">
-                            Interdum et malesuada fames ac ante primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
-                        </p>
+                        <article>
+                            <h2 class="features-header">
+                                Header
+                            </h2>
+                            <p class="features-text">
+                                Interdum et malesuada fames ac ante primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
+                            </p>
+                        </article>
                     </div>
                     <div class="features">
-                        <div class="img_container">
+                        <div class="img-container">
                             <img src="/Media/features2.png" alt="feature2">
-                        </div>                        
-                        <h2 class="features_header">
-                            Header
-                        </h2>
-                        <p class="features_text">
-                            Interdum et malesuada fames ac ante primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
-                        </p>
+                        </div>
+                        <article>
+                            <h2 class="features-header">
+                                Header
+                            </h2>
+                            <p class="features-text">
+                                Interdum et malesuada fames ac ante primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
+                            </p>
+                        </article>                        
                     </div>
                     <div class="features">
-                        <div class="img_container">
+                        <div class="img-container">
                             <img src="/Media/features3.png" alt="feature3">
-                        </div>                        
-                        <h2 class="features_header">
-                            Header
-                        </h2>
-                        <p class="features_text">
-                            Interdum et malesuada fames ac ante  primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
-                        </p>
+                        </div>   
+                        <article>
+                            <h2 class="features-header">
+                                Header
+                            </h2>
+                            <p class="features-text">
+                                Interdum et malesuada fames ac ante  primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus.
+                            </p>
+                        </article>                     
                     </div>
                 </div>
             </div>
@@ -165,13 +174,13 @@
 
     <!-- block 4 -->
     <section class="block4">
-        <!-- background -->
+
         <div class="background">
             <img src="/Media/backgrounduno.png" alt="Background 1">
             <img src="/Media/backgrounddos.png" id="background_2" alt="Background 2">
         </div>
 
-        <div class="block4_wrapper">
+        <div class="block4-wrapper">
             <form id="form2">
                 <div class="form-control-2">
                     <label>Number of employees</label>
@@ -198,14 +207,13 @@
     </section>
 
     <!-- block 5 -->
-
     <section class="block5">
-        <div class="block3_title">
-            <div class="block3_title_wrapper">
+        <div class="block5-title">
+            <div class="block5-title-wrapper">
                 <h2 class="title2">
                     Price
                 </h2>
-                <div class="divider_wrapper">
+                <div class="divider-wrapper">
                     <div class="divider">
 
                     </div>
@@ -289,10 +297,10 @@
             </div>
             <div>
                 <div class="footer-title">Follow US</div>
-                <Div>
+                <div>
                     <a href="#"><img src="/Media/facebook.png" alt="Facebook" class="footer-logo"></a>
                     <a href="#"><img src="/Media/li.png" alt="LinkedIn" class="footer-logo"></a>
-                </Div>
+                </div>
             </div>
         </div>
         <div class="footer-divider"></div>

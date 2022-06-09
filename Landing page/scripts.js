@@ -1,25 +1,28 @@
 //hamburguer menu function
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    var y = document.getElementById("menu");
-    var z = document.getElementById("close_hamburguer");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-      y.style.display = "block";
-      z.style.display = "none";
-    } else {
-      x.style.display = "block";
-      y.style.display = "none";
-      z.style.display = "block";
-    }
-}
+const open_hamburguer = document.getElementById('open_hamburguer');
+const close_hamburguer = document.getElementById('close_hamburguer');
+const my_links = document.getElementById("my_links");
+open_hamburguer.addEventListener('click', () => {
+  my_links.style.display = "block";
+  open_hamburguer.style.display = "none";
+  close_hamburguer.style.display = "block";
+  body.classList.add('fixed')
+})
+close_hamburguer.addEventListener('click', () => {
+  my_links.style.display = "none";
+  open_hamburguer.style.display = "block";
+  close_hamburguer.style.display = "none";
+  body.classList.remove('fixed')
+})
 
 // script for the pop-up
+const body = document.body;
 const popup_container = document.getElementById('popup_container');
 const close = document.getElementById('close');
 
 close.addEventListener('click', () => {
   popup_container.classList.remove('show')
+  body.classList.remove('fixed')
 })
 
 // script for the validation
@@ -56,7 +59,8 @@ function checkInputs() {
 
   if(phone_number_success && date_rate_success) {
     document.getElementById('popup_paragraph').innerHTML = `Your phone number is: ${phone_number_value} <br> Your day rate is: ${day_rate_value}`;
-    popup_container.classList.add('show')
+    popup_container.classList.add('show');
+    body.classList.add('fixed')
   }
 }
 
