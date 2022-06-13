@@ -1,6 +1,15 @@
 // random card number function
+let random 
 document.querySelector('.generate_random').onclick = () => {
-    document.querySelector('.card_number').innerText = Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + ' ' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + ' ' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + ' ' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10) + '' + Math.floor(Math.random() * 10);
+    random = Math.floor(Math.random()*10000000000000000).toString().replace(/([0-9]{4})/g,'$1 ').trim();
+    
+    if (random.length === 18) {
+        random = '0' + random;
+    } else if (random.length === 17) {
+        random = '00' + random;
+    }
+
+    document.querySelector('.card_number').innerText = random;
 }
 
 // validating the name
@@ -43,45 +52,28 @@ document.querySelector('.card_number_input').oninput = () => {
     document.querySelector('.card_number').innerText = numberInput;
 }
 
-
 //checking the expiration date
-document.querySelector('.expiration_input').onkeyup = () => {
+document.querySelector('.expiration_input').oninput = () => {
     let expiration = document.querySelector('.expiration_input').value;
     const exp = document.getElementById('exp');
 
-    if (expiration.length === 5) {
-        function validDate(expiration) {
-            var result = false;
-            expiration = expiration.split('/');
-            var pattern = /^\d{2}$/;
-          
-            if (expiration[0] < 1 || expiration[0] > 12)
-                result = true;
-          
-            if (!pattern.test(expiration[0]) || !pattern.test(expiration[1]))
-                result = true;
-          
-            if (expiration[2])
-                result = true;
-          
-            if (result) {
-                alert("Please enter a valid date in MM/YY format.");
-                setErrorFor(exp);
-            }
-            else{
-                setSuccessFor(exp);
-            }
-          }
-    
-        validDate(expiration)
+    expiration = expiration
+    .replace(/\D/g, '')
+    .replace(/\//g, "").substring(0, 2) + 
+    (expiration.length > 2 ? '/' : '') + 
+    expiration.replace(/\//g, "").substring(2, 4)
+    .replace(/\D/g, '');
+
+    document.querySelector('.expiration_input').value = expiration;
+
+    if (expiration.length < 5) {
+        setErrorFor(exp);
+    } else {
+        setSuccessFor(exp);
     }
 
     if (expiration === ''){
         expiration = "01/23";
-    }
-
-    if (expiration.length < 5) {
-        setErrorFor(exp);
     }
 
     document.querySelector('.number_expiration').innerText = expiration;
