@@ -103,10 +103,6 @@ nav {
   font-size: 1.4rem;
 }
 
-.sub-menu li {
-  line-height: 4rem;
-}
-
 .btn {
   display: inline-block;
   padding-left: 1rem;
@@ -134,7 +130,6 @@ nav {
   position: absolute;
   border-top: 3px solid #3f72af;
   z-index: 100;
-  top: 16rem;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 650ms ease;
@@ -146,19 +141,20 @@ nav {
 .sub-menu::before {
   content: "";
   position: absolute;
-  top: -2.5rem;
   left: 3rem;
-  border: 1.2rem solid transparent;
   border-bottom-color: #3f72af;
 }
 
+.sub-menu li {
+  line-height: 4rem;
+}
+
 .nav-list li:hover > .sub-menu {
-  top: 8rem;
   opacity: 1;
   visibility: visible;
 }
 
-#open_hamburguer, #close_hamburguer {
+#openHamburguer, #closeHamburguer {
   width: 18px;
   height: 18px;
 }
@@ -258,11 +254,11 @@ input[placeholder] {
   font-size: 1.4rem;
 }
 
-#day_rate_wrapper {
+#dayRateWrapper {
   width: 45%;
 }
 
-#phone_number {
+#phoneNumber {
   width: 100%;
 }
 
@@ -270,7 +266,7 @@ form > div {
   padding: 10px 0 10px 0;
 }
 
-#day_rate {
+#dayRate {
   width: 100%;
 }
 
@@ -672,15 +668,15 @@ body.fixed {
   display: flex;
 }
 
-#tier_2 {
+#tier2 {
   background-color: #112d4e;
 }
 
-#tier_2_month {
+#tier2Month {
   color: #112d4e;
 }
 
-#tier_2_button {
+#tier2Button {
   background-color: #112d4e;
 }
 
@@ -783,7 +779,7 @@ img[alt="Facebook"] {
   .nav-list li {
     line-height: 6rem;
   }
-  #open_hamburguer, #close_hamburguer {
+  #openHamburguer, #closeHamburguer {
     width: 25px;
     height: 25px;
   }
@@ -848,7 +844,7 @@ img[alt="Facebook"] {
   .popup {
     margin: 0 10px;
   }
-  #day_rate_wrapper {
+  #dayRateWrapper {
     width: 100%;
     padding-bottom: 20px;
   }
@@ -890,7 +886,7 @@ img[alt="Facebook"] {
   .block4-wrapper .button-control {
     padding-top: 30px;
   }
-  #background_2 {
+  #background2 {
     display: none;
   }
   .tier-container {
